@@ -6,7 +6,7 @@ ProtogenOS is a custom operating system designed for fursuit masks with advanced
 - **LED Matrix Face**: Displays animated expressions and customizable visuals.
 - **NFC Friend Storage**: Stores UID and basic details of other ProtogenOS users.
 - **UDP Broadcast Sync**: Detects and syncs with nearby ProtogenOS devices.
-- **Wi-Fi Web Control Surface (WCSW)**: Web-based interface for real-time customization.
+- **Wi-Fi Web Control Surface (WWCS)**: Web-based interface for real-time customization.
 - **OLED Status Screen**: Displays integration status and system info.
 - **Ultrasonic Sensor (USS)**: Detects proximity and user interactions.
 - **IMU (Gyroscope/Accelerometer) for Tail Movements**: Captures motion for expressions or responses.
