@@ -1,0 +1,207 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    position: relative;
+    user-select: none;
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' %3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%2380F'/%3E%3Cstop offset='1' stop-color='%23f40'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpattern id='b' width='24' height='24' patternUnits='userSpaceOnUse'%3E%3Ccircle fill='%23ffffff' cx='12' cy='12' r='12'/%3E%3C/pattern%3E%3Crect width='100%25' height='100%25' fill='url(%23a)'/%3E%3Crect width='100%25' height='100%25' fill='url(%23b)' fill-opacity='0.1'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.image-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-right-image {
+    max-width: 300px; 
+    height: auto;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.event-buttons, .matrix-pad {
+    margin: 20px 0;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.control-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.control-btn:hover {
+    background-color: #0056b3;
+}
+
+
+/* From Uiverse.io by satisshTechie */ 
+.PB-range-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 4px;
+    border-radius: 5px;
+    background: #D5DBE1;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .PB-range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .PB-range-slider::-webkit-slider-thumb:hover {
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.16);
+    transition: 0.3s ease-in-out;
+  }
+  
+  .PB-range-slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #585858;
+  }
+  
+  .PB-range-slider-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #C6CACE;
+    box-shadow: 0px 1px 2px 0px #1F1E241F;
+  }
+  
+  .PB-range-slidervalue {
+    font-weight: 600;
+  }
+
+  .pushable {
+    position: relative;
+    background: transparent;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    outline-offset: 4px;
+    outline-color: deeppink;
+    transition: filter 250ms;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: hsl(226, 25%, 69%);
+    border-radius: 8px;
+    filter: blur(2px);
+    will-change: transform;
+    transform: translateY(2px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .edge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    background: linear-gradient(
+      to right,
+      hsl(248, 39%, 39%) 0%,
+      hsl(248, 39%, 49%) 8%,
+      hsl(248, 39%, 39%) 92%,
+      hsl(248, 39%, 29%) 100%
+    );
+  }
+  
+  .front {
+    display: block;
+    position: relative;
+    border-radius: 8px;
+    background: hsl(248, 53%, 58%);
+    padding: 16px 32px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 1rem;
+    transform: translateY(-4px);
+    transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+  }
+  
+  .pushable:hover {
+    filter: brightness(110%);
+  }
+  
+  .pushable:hover .front {
+    transform: translateY(-6px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .front {
+    transform: translateY(-2px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:hover .shadow {
+    transform: translateY(4px);
+    transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+  }
+  
+  .pushable:active .shadow {
+    transform: translateY(1px);
+    transition: transform 34ms;
+  }
+  
+  .pushable:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .circle-small {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white; /* Filled with white */
+    opacity: 0.9;
+    pointer-events: none; /* Prevents the circle from interfering with other interactions */
+    transform: translate(-50%, -50%); /* Center the ball on the cursor */
+    transition: all 0.2s ease; /* Smooth transition for resizing */
+  }

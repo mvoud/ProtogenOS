@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/index.css?v=2">
+    <title>Proton</title>
+</head>
+<body>
+    <div class="image-container">
+        <img src="resources/images/meep.png" alt="Meep" class="bottom-right-image" id="meep-image">
+        <script>
+            const meepImage = document.getElementById("meep-image");
+        
+            document.getElementById("meep-image").addEventListener("click", function() {
+                let audio = new Audio("resources/audio/boop.mp3");
+                audio.play();
+                meepImage.src = "resources/images/meep_petting.png";
+                setTimeout(() => {
+                    meepImage.src = "resources/images/meep.png";
+                }, 200);
+            });
+            
+            
+            function blink() {
+              meepImage.src = "resources/images/meep_closed.png"; // Eyes closed
+              setTimeout(() => {
+                meepImage.src = "resources/images/meep.png"; // Eyes open
+              }, 150); // Blink duration (milliseconds)
+
+            }
+        
+            function startBlinking() {
+              setTimeout(() => {
+                blink();
+                startBlinking(); // Schedule the next blink
+
+            }, Math.random() * 4000 + 2000); // Blink randomly every 2-6 seconds
+   
+            }
+        
+            startBlinking();
+          </script>
+    </div>
+    <center>
+        <div class="container">            
+            <section class="event-buttons">
+                <h2>Control Events</h2>
+                <hr> <br>
+                <div class="buttons">
+                    <button id="tailmoves-btn" class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front"> Tail Moviment </span>
+                    </button>
+                    <button id="earmoves-btn" class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front"> Ear Moviment </span>
+                    </button>
+                    <button id="screenmoves-btn" class="pushable">
+                        <span class="shadow"></span>
+                        <span class="edge"></span>
+                        <span class="front"> Screen </span>
+                    </button> <br>
+                </div>
+                <h2>Control Events Core</h2>
+                <hr>
+                <div class="buttons">
+                    <br>
+                    <p align="left">Tail Moviment Speed</p>
+                    <div class="PB-range-slider-div"> <input type="range" min="0" max="100" value="50" class="PB-range-slider" id="tailmovspeed"></div>
+                    <br>
+                    <p align="left">Ear RNG Percentage</p>
+                    <div class="PB-range-slider-div"> <input type="range" min="0" max="100" value="50" class="PB-range-slider" id="tailmovspeed"></div>
+                    <br>
+                    <p align="left">UDP Brodcast Radius-pickup</p>
+                    <div class="PB-range-slider-div"> <input type="range" min="0" max="100" value="50" class="PB-range-slider" id="tailmovspeed"></div>    
+                </div>
+            </section> 
+        </div>
+    </center>
+</body>
+</html>
