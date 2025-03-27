@@ -1,7 +1,5 @@
 # ProtogenOS
 
-ProtogenOS is a custom operating system designed for fursuit masks with advanced interaction features, including real-time LED expressions, wireless communication, and motion-based responses.
-
 ## 🚀 Features
 - **LED Matrix Face**: Displays animated expressions and customizable visuals.
 - **NFC Friend Storage**: Stores UID and basic details of other ProtogenOS users.
