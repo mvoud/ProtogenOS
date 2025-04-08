@@ -1,4 +1,4 @@
-# ProtogenOS
+# ProtogenOS - Coming Soon
 
 ## 🚀 Features
 - **LED Matrix Face**: Displays animated expressions and customizable visuals.
