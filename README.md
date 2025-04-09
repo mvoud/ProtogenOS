@@ -1,4 +1,4 @@
-# ProtogenOS - Coming Soon
+# ProtogenOS - Coming Soon (not ready for uploading to fursuits)
 
 ## 🚀 Features
 - **LED Matrix Face**: Displays animated expressions and customizable visuals.
