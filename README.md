@@ -1,5 +1,9 @@
 # ProtogenOS - Coming Soon (not ready for uploading to fursuits)
 
+## PCB Workon Preview
+![image](https://github.com/user-attachments/assets/5daf8fc2-fbed-41e1-8b05-de2257e6bf94)
+
+
 ## 🚀 Features
 - **LED Matrix Face**: Displays animated expressions and customizable visuals.
 - **NFC Friend Storage**: Stores UID and basic details of other ProtogenOS users.
@@ -8,6 +12,7 @@
 - **OLED Status Screen**: Displays integration status and system info.
 - **Ultrasonic Sensor (USS)**: Detects proximity and user interactions.
 - **IMU (Gyroscope/Accelerometer) for Tail Movements**: Captures motion for expressions or responses.
+- Custom Framework PCB Board
 
 ## 🛠 Hardware Requirements
 - **Raspberry Pi 2GB+** (for LED matrix processing)
