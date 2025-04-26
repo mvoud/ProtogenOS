@@ -1,6 +1,6 @@
 # ProtogenOS - Coming Soon (not ready for uploading to fursuits)
 
-## PCB Workon Preview
+## PCB Framework Preview
 ![image](https://github.com/user-attachments/assets/5daf8fc2-fbed-41e1-8b05-de2257e6bf94)
 
 
